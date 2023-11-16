@@ -14,7 +14,7 @@ The key concept of this solution is to divide game positions in two categories, 
 $$
 pos``_state = 
 \begin{cases}
-N & \text{ if } \ nim-sum = 0 \\
+N & \text{ if } \ nim``_sum = 0 \\
 P & \text{ otherwise}
 \end{cases}
 $$
