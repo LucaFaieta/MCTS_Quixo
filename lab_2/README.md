@@ -12,7 +12,7 @@ This solution was built from a paper published at the Cornell University of New 
 The key concept of this solution is to divide game positions in two categories, based on the advantage that they give to the players. Any move represents a possible state of the game board. N-positions are positions that give advantage to the current player (i.e. the one who just made the move), while P-positions are those who give advantaged to the opponent. N and P positions are determined by a function called nim-sum.
 
 $$
-pos\_state = 
+pos\\_state = 
 \begin{cases}
 N & \text{ if } \ nim\_sum = 0 \\
 P & \text{ otherwise}
