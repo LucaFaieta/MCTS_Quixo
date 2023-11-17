@@ -23,7 +23,7 @@ $$
 The nim_sum function can be arbitrarily defined, but there is a family of functions that guarantee a winning strategy. The most well-known in literature is :
 
 $$
-nim\_sum = A \text{ } xor B \text{ } xor \text{  } C \text{ } ... \text{  } xor \text{ } N
+nimsum = A \text{ } xor B \text{ } xor \text{  } C \text{ } ... \text{  } xor \text{ } N
 $$
 
 where N is the number of piles in the game. Using this function, a player that only makes moves for which the resulting position has nim_sum = 0 is guaranteed to win the game.
