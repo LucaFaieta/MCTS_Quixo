@@ -88,7 +88,7 @@ After computing the state of every node, there are three theorems that run the w
 \ $
 
 
-At this point it's enough to apply `fitness_function(expression)` to the tree, which will return the sum of all the violations of the rules above on the specific tree  
+At this point it's enough to apply `fitness_function(expression)` to the tree, which will return the sum of all the violations of the rules found on the specific tree  
 
 If, for a certain chromosome, the expression encoded has fitness = 0, that expression is a winning strategy.
 
