@@ -64,7 +64,7 @@ $$
 Our methodology is strongly based on the definition of **fitness** of a given chromosome, which is computed applying the encoded expression to the whole set of possible moves in a match. This structure can be easily represented by a tree where each node is a possible configuration of the board and is connected to all the next possible moves.
 
 <div align="center">
-  <img src="nim_tree.JPG" alt="Nim Tree" width="400"/>
+  <img src="nim_tree.JPG" alt="Nim Tree" width="300"/>
 </div>
 
 
