@@ -26,7 +26,7 @@ $$
 nimsum = A \text{ } xor B \text{ } xor \text{  } C \text{ } ... \text{  } xor \text{ } N
 $$
 
-where N is the number of piles in the game. Using this function, a player that only makes moves for which the resulting position has nim_sum = 0 is guaranteed to win the game.
+where N is the number of piles in the game. Using this function, a player that makes a move only if the resulting position has nim_sum = 0 is guaranteed to win the game.
 
 The goal of our algorithm is to find a winning nim_sum (or at least a very good one) at the start of the match, and base its game strategy on that.
 
