@@ -63,26 +63,10 @@ $$
 ### Fitness of a candidate
 Our methodology is strongly based on the definition of **fitness** of a given chromosome, which is computed applying the encoded expression to the whole set of possible moves in a match. This structure can be easily represented by a tree where each node is a possible configuration of the board and is connected to all the next possible moves.
 
-$$
-\begin{array}{ccccc}
-\\
-&& \text{(1,2)} && \\
 
-& \swarrow & \downarrow & \searrow & \\
+![Alt Text](nim_tree.JPG)
 
-\text{(1,0)} && \text{(1,1)} && \text{(0,2)} \\
 
-\downarrow && \swarrow \searrow && \downarrow & \searrow  \\
-
-\text{(1,0)} & \text{(1,1)} && \text{(0,2)} & \text{(0,2)} && \text{(0,2)} \\
-
-\downarrow & \downarrow  && \downarrow & \downarrow && \downarrow  \\
-
-\text{(0,0)} & \text{(0,0)}  && \text{(0,0)} & \text{(0,0)} && \text{(0,0)}  \\
-
-\\
-\end{array}
-$$
 
 $$
 \scriptsize{\text{A very small position tree generated from a Nim with two piles with 1 and 2 elements respectively.}}\\ 
