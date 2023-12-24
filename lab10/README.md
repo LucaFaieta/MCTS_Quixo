@@ -15,70 +15,10 @@ An agent that has to learn how to play, needs to memorize positions and visit th
 
 In a basic tic tac toe game there are roughly 19.000 possible states, and the algorithm needs to accumulate information on each of those. Our intuition was that not every board position it's really unique: many of them can be derived by others simply applying rotations and/or symmetries.
 
-$$
-\begin{array}{cc}
-\begin{matrix}
-\begin{aligned}
-X & \\
-. & \\
-O &
-\end{aligned}
-&
-\begin{aligned}
-X & \\
-O & \\
-. &
-\end{aligned}
-&
-\begin{aligned}
-. & \\
-X & \\
-. &
-\end{aligned}
-\end{matrix}
-&&&&&
-\begin{matrix}
-\begin{aligned}
-. & \\
-X & \\
-X &
-\end{aligned}
-&
-\begin{aligned}
-X & \\
-O & \\
-. &
-\end{aligned}
-&
-\begin{aligned}
-. & \\
-. & \\
-O &
-\end{aligned}
-\end{matrix}
-&&&&&
-\begin{matrix}
-\begin{aligned}
-. & \\
-X & \\
-. &
-\end{aligned}
-&
-\begin{aligned}
-X & \\
-O & \\
-. &
-\end{aligned}
-&
-\begin{aligned}
-X & \\
-. & \\
-O &
-\end{aligned}
-\end{matrix}
-\end{array}
+<div align="center">
+  <img src="tictactoe.JPG" alt="Tic Tac Toe" width="500"/>
+</div>
 
-$$
 
 As you can see, the positions above, while apparently different, are actually the same just rotated and then mirrored. Our implementation makes the learning algorithm able to understand this aggregation.
 
