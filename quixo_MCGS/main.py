@@ -16,7 +16,7 @@ class RandomPlayer(Player):
         return from_pos, move
 
 class OffMonteCarloPlayer(Player):
-    def __init__(self, train_with_checkpoints=False, load_model=False, log_folder = None) -> None:
+    def __init__(self, train_with_checkpoints=True, load_model=False, log_folder = None) -> None:
         super().__init__()
         self.checkpoint = train_with_checkpoints
         self.log_folder = log_folder
@@ -153,7 +153,7 @@ class OnMonteCarloPlayer(Player):
         return from_pos, move
 
 class MixedMonteCarloPlayer(Player):
-    def __init__(self, train_with_checkpoints=False, load_model=False, log_folder = None, step=100) -> None:
+    def __init__(self, train_with_checkpoints=True, load_model=False, log_folder = None, step=100) -> None:
         super().__init__()
         self.checkpoint = train_with_checkpoints
         self.log_folder = log_folder
@@ -252,16 +252,10 @@ if __name__ == '__main__':
 
     ### GAME ###
     random_player = RandomPlayer()
-    mc_player = OffMonteCarloPlayer(load_model=True, log_folder=r"/content/drive/MyDrive/quixo_MCGS/logs")
+    mc_player = OffMonteCarloPlayer(load_model=True, log_folder=r"your/log/path")
     mixed_player =  MixedMonteCarloPlayer(load_model=True, log_folder=r"your/log/path")
     #winner = g.play(mixed_player, random_player)
     #print(f"Winner : Player {winner}")
-    node = State(32)
-    node.print_board_from_state()
-    node2 = State(524288)
-    node2.print_board_from_state()
-    my_dict = {State(1048576): 1}
-    
-    print(node in my_dict)
+
     ### TRAINING ###
     #mc_player.train()
